@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valencia, Negros Oriental - The Highland Gem</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Setting a pleasant default font */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7;
+        }
+        /* Custom class for the fade effect to ensure consistency with background color */
+        .fade-overlay {
+            /* This gradient must match the body's background-color (#f7f7f7) */
+            background: linear-gradient(to top, #f7f7f7 0%, rgba(247, 247, 247, 0) 100%);
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'valencia-green': '#006400',
+                        'valencia-teal': '#008080',
+                        'valencia-gold': '#FFD700',
+                        'bg-light': '#f7f7f7',
+                        'card-bg': '#ffffff',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="text-gray-800">
+
+    <!-- Hero Section -->
+    <header class="relative h-[60vh] md:h-[80vh] flex items-center justify-center text-white overflow-hidden">
+        <!-- Background Image Placeholder (Reverted to placeholder URL for reliable display) -->
+        <div class="absolute inset-0 bg-cover bg-center transition-opacity duration-700"
+             style="background-image: url('images/photo.jpg');">
+             <!-- Dark Overlay for better text readability -->
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+            <!-- Fade-out effect at the bottom (fades into the body background color) -->
+            <div class="absolute bottom-0 inset-x-0 h-1/4 fade-overlay"></div>
+        </div>
+
+        <div class="relative z-10 text-center p-4">
+            <h1 class="text-4xl md:text-7xl font-extrabold mb-4 drop-shadow-lg tracking-tight">
+                Valencia, Negros Oriental
+            </h1>
+            <p class="text-xl md:text-2xl font-light italic drop-shadow-md">
+                The Highland Gem of the Philippines
+            </p>
+            <a href="#attractions" class="mt-8 inline-block px-6 py-3 bg-valencia-teal hover:bg-valencia-green transition duration-300 text-lg font-semibold rounded-full shadow-lg transform hover:scale-105">
+                Explore The Waterfalls
+            </a>
+        </div>
+    </header>
+
+    <!-- Valencia Plaza Section (New Feature - Placed with negative margin to overlap the fade) -->
+    <section class="max-w-6xl mx-auto -mt-16 md:-mt-24 relative z-20 px-4" id="plaza">
+        <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-12 text-center border-t-8 border-valencia-teal">
+            <!-- Plaza Image Placeholder (UPDATED: h-64 for mobile, md:h-96 for desktop) -->
+            <img src="images/photo5.jpg"
+                 alt="Picture of the Valencia Town Plaza and St. Nicholas of Tolentine Parish Church"
+                 class="w-full h-64 md:h-96 object-cover rounded-2xl mb-8 shadow-xl">
+            
+            <h2 class="text-3xl md:text-5xl font-extrabold text-valencia-green mb-4">
+                The Heart of Valencia: The Town Plaza
+            </h2>
+            <p class="text-xl text-gray-700 leading-relaxed mb-6">
+                The Valencia Town Plaza, anchored by the historic St. Nicholas of Tolentine Parish Church, serves as the vibrant center of the municipality. It's the perfect place to witness local life, enjoy the cool mountain breeze, and appreciate the classic Filipino town structure.
+            </p>
+            <a href="#attractions" class="inline-block px-6 py-3 bg-valencia-gold text-valencia-green hover:bg-valencia-teal hover:text-white transition duration-300 font-semibold rounded-full shadow-lg">
+                Discover More Landmarks
+            </a>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-4 pt-12">
+        
+        <!-- Introduction Section (Adjusted margin-top) -->
+        <section class="mb-16 text-center max-w-4xl mx-auto mt-8" id="introduction">
+            <h2 class="text-3xl md:text-4xl font-bold text-valencia-green mb-6 border-b-2 border-valencia-gold pb-2 inline-block">
+                Welcome to the Cool Highlands
+            </h2>
+            <p class="text-lg leading-relaxed text-gray-600">
+                Nestled just a short drive from Dumaguete City, Valencia offers a refreshing escape into nature. Known for its cool mountain climate, lush landscapes, geothermal features, and dramatic waterfalls, this municipality is a haven for adventurers and those seeking tranquility. Discover a town rich in history and teeming with natural wonders, thanks to its proximity to Mount Talinis.
+            </p>
+        </section>
+
+        <!-- Main Attractions Section -->
+        <section class="mb-16" id="attractions">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-valencia-green mb-10">
+                Must-See Natural Wonders
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Attraction 1: Casaroro Falls -->
+                <div class="bg-card-bg rounded-xl shadow-2xl overflow-hidden transform hover:scale-[1.02] transition duration-300">
+                    <img src="images/photo2.webp"
+                         alt="A dramatic tall waterfall surrounded by green jungle."
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/008080/ffffff?text=Casaroro+Falls';"
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-valencia-teal mb-3">Casaroro Falls</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            One of the most famous waterfalls in Negros Oriental. Reaching it involves a challenging hike and descent via a concrete stairway, but the sight of the majestic, narrow column of water plunging into a deep pool is an incredible reward.
+                        </p>
+                        <a href="#" class="mt-4 inline-block text-valencia-green font-medium hover:text-valencia-teal transition duration-200">
+                            Learn More &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Attraction 2: Pulangbato Hot Springs -->
+                <div class="bg-card-bg rounded-xl shadow-2xl overflow-hidden transform hover:scale-[1.02] transition duration-300">
+                    <img src="images/photo4.webp"
+                         alt="Red-colored rocks and steaming hot spring waters."
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/FF5733/ffffff?text=Pulangbato+Springs';"
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-valencia-teal mb-3">Pulangbato Hot Springs</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Experience the unique geothermal activity of Valencia. The 'Pulangbato' (red rock) area features sulfurous hot springs and a waterfall whose rocks are stained red and orange by mineral deposits. Perfect for a relaxing, therapeutic dip.
+                        </p>
+                        <a href="#" class="mt-4 inline-block text-valencia-green font-medium hover:text-valencia-teal transition duration-200">
+                            View Directions &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Attraction 3: Japanese Shrine -->
+                <div class="bg-card-bg rounded-xl shadow-2xl overflow-hidden transform hover:scale-[1.02] transition duration-300">
+                    <img src="images/photo6.jpg"
+                         alt="Historical monument and shrine in Valencia."
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/8B4513/ffffff?text=Japanese+Shrine';"
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-valencia-teal mb-3">Fil-Am Japanese Shrine</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            A poignant historical site dedicated to the memory of the soldiers who perished during World War II in the mountains of Valencia. It offers a solemn atmosphere and sweeping panoramic views of the surrounding countryside.
+                        </p>
+                        <a href="#" class="mt-4 inline-block text-valencia-green font-medium hover:text-valencia-teal transition duration-200">
+                            Explore History &rarr;
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Travel Tips & Logistics Section -->
+        <section class="mb-16 bg-white p-8 md:p-12 rounded-2xl shadow-xl border-t-4 border-valencia-green" id="tips">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-valencia-green mb-8">
+                Planning Your Adventure
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Tip 1 -->
+                <div class="p-4 bg-bg-light rounded-lg">
+                    <h3 class="font-semibold text-xl text-valencia-teal mb-2">Getting There</h3>
+                    <p class="text-gray-700">Valencia is easily accessible from Dumaguete City (about 30-45 minutes). Take a habal-habal (motorcycle taxi) or hire a multi-cab for a group.</p>
+                </div>
+                <!-- Tip 2 -->
+                <div class="p-4 bg-bg-light rounded-lg">
+                    <h3 class="font-semibold text-xl text-valencia-teal mb-2">Best Time to Visit</h3>
+                    <p class="text-gray-700">The best time is during the dry season (December to May) for easier trekking, though the cool climate is enjoyable year-round.</p>
+                </div>
+                <!-- Tip 3 -->
+                <div class="p-4 bg-bg-light rounded-lg">
+                    <h3 class="font-semibold text-xl text-valencia-teal mb-2">Local Flavors</h3>
+                    <p class="text-gray-700">Don't miss the local coffee plantations! The area is known for producing high-quality arabica beans due to its high altitude and rich volcanic soil.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-valencia-green text-white py-10">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-4 text-lg font-light">
+                Start your journey into the green heart of Negros Oriental.
+            </p>
+            <div class="flex justify-center space-x-6 text-sm">
+                <a href="#plaza" class="hover:text-valencia-gold transition duration-200">Plaza</a>
+                <a href="#attractions" class="hover:text-valencia-gold transition duration-200">Attractions</a>
+                <a href="#tips" class="hover:text-valencia-gold transition duration-200">Tips</a>
+            </div>
+            <p class="mt-6 text-sm opacity-75">
+                &copy; 2024 Valencia Tourism Guide. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
